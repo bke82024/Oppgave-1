@@ -1,9 +1,13 @@
 * {
-  background-color: white;
   margin: 0;
+  box-sizing: border-box;
 }
+body {
+  min-height: 100svh;
+}
+
 header {
-  background-color: aqua;
+  background: linear-gradient();
   display: block;
   max-width: 100%;
   max-height: 100vh;
@@ -20,22 +24,43 @@ main {
   border: 1px black solid;
 }
 
-footer {
-  border: 1px black solid;
-}
-
 img {
   max-height: 250px;
   border: 1px black solid;
 }
 
-figcaption {
+section {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+}
+
+figure {
   display: flex;
   border: 1px black solid;
+  margin: 5px;
 }
 
 .image-description {
   display: flex;
   border: 1px black solid;
-  max-height: 1000px;
+  max-width: 100px;
+  padding-left: 5px;
+}
+
+a {
+  margin: 5px;
+  max-height: 20px;
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: rgb(253, 53, 53);
 }
